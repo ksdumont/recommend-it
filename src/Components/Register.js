@@ -4,9 +4,9 @@ import Navbar from "./Navbar";
 import firebase from "../firebase";
 
 const Register = props => {
-  const [name, setname] = useState(null);
-  const [email, setemail] = useState(null);
-  const [password, setpassword] = useState(null);
+  const [name, setname] = useState("");
+  const [email, setemail] = useState("");
+  const [password, setpassword] = useState("");
 
   async function onRegister() {
     try {

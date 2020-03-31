@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import firebase from "./firebase";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
-import Dashboard from "./Components/Dashboard"
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Dashboard from "./Components/Dashboard";
 import HomePage from "./Components/HomePage";
 import Login from "./Components/Login";
 import Navbar from "./Components/Navbar";
 import Register from "./Components/Register";
+
 
 function App() {
   const [firebaseInitialized, setFirebaseInitialized] = useState(false);
@@ -33,7 +34,7 @@ function App() {
     <header>
       <h1>Loading...</h1>
     </header>
-  )
+  );
 }
 
 export default App;
