@@ -1,9 +1,10 @@
 import app from "firebase/app";
 import "firebase/auth";
 import "firebase/firebase-firestore";
+require("dotenv").config()
 
 const config = {
-  apiKey: "AIzaSyClEGV8EDXNOrY1r7TW4_w2X3DOZke8Pgg",
+  apiKey: process.env.apiKey,
   authDomain: "recommendit-2464c.firebaseapp.com",
   databaseURL: "https://recommendit-2464c.firebaseio.com",
   projectId: "recommendit-2464c",
