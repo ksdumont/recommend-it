@@ -5,7 +5,10 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Dashboard from "./Components/Dashboard";
 import HomePage from "./Components/HomePage";
 import Login from "./Components/Login";
+import Edit from "./Components/Edit";
+import Category from "./Components/Category";
 import Navbar from "./Components/Navbar";
+import Author from "./Components/Author";
 import Register from "./Components/Register";
 
 
@@ -24,9 +27,9 @@ function App() {
           <Route exact path="/login" component={Login} />
           <Route exact path="/register" component={Register} />
           <Route exact path="/dashboard" component={Dashboard} />
-          {/* <Route exact path="/editRecommendation/:id" component={Edit} />
+          <Route exact path="/editRecommendation/:id" component={Edit} />
           <Route exact path="/category/:category" component={Category} />
-          <Route exact path="/author/:author" component={Author} /> */}
+          <Route exact path="/author/:author" component={Author} />
         </Switch>
       </Router>
     </section>
